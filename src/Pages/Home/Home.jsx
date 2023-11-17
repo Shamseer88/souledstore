@@ -41,15 +41,6 @@ export default function Home() {
     <>
       <AllSlide />
       <ProductContainer products={products} />
-      {/* <div className="pagination">
-        <button onClick={handlePrevButton}>Prev</button>
-        {pageNumbers.map((value) => (
-          <button key={value} onClick={() => setCurrentPage(value)}>
-            {value}
-          </button>
-        ))}
-        <button onClick={handleNextButton}>Next</button>
-      </div> */}
       <Pagination
         handleNextButton={handleNextButton}
         handlePrevButton={handlePrevButton}

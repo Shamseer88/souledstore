@@ -11,3 +11,9 @@
 .product-list-container {
   flex: 5;
 }
+
+@media only screen and (max-width: 750px) {
+  .sidebar {
+    display: none;
+  }
+}

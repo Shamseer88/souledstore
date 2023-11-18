@@ -29,6 +29,13 @@
   align-items: center;
 }
 
+.navbar-icons {
+  cursor: pointer;
+  color: var(--color-text-navbar);
+}
+.navbar-icons:hover {
+  color: var(--color-green);
+}
 @media only screen and (max-width: 720px) {
   .left p {
     display: none;

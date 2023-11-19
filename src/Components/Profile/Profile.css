@@ -32,3 +32,15 @@
   font-weight: 700;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 720px) {
+  .profile p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .auth-modal {
+    right: 0px;
+  }
+}

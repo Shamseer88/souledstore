@@ -2,8 +2,12 @@ import "./BottomNavbar.css";
 import { SlHandbag, SlHeart, SlUser } from "react-icons/sl";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
+import { useUser } from "../../../Provider/UserProvider";
+import Profile from "../../Profile/Profile";
 
 export default function BottomNavbar() {
+  const { setUserContext: signOutContext, isUserLoggedIn } = useUser();
+  let loginUsername = sessionStorage.getItem("userInfo");
   const navigate = useNavigate();
   return (
     <nav className="bottom-nav">
@@ -20,11 +24,7 @@ export default function BottomNavbar() {
       </div>
       <div className="right">
         <input type="text" placeholder="Search..." />
-        <SlUser
-          size={20}
-          onClick={() => navigate("/sign-in")}
-          className="navbar-icons"
-        />
+        <Profile />
         <SlHeart size={20} className="navbar-icons" />
         <SlHandbag size={20} className="navbar-icons" />
       </div>

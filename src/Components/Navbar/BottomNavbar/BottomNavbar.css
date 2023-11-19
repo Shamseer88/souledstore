@@ -36,6 +36,7 @@
 .navbar-icons:hover {
   color: var(--color-green);
 }
+
 @media only screen and (max-width: 720px) {
   .left p {
     display: none;

@@ -4,7 +4,7 @@
 }
 
 .profile p {
-  color: var(--color-red-primary);
+  color: var(--color-green);
   text-transform: capitalize;
   font-size: 15px;
 }

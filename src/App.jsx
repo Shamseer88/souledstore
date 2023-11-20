@@ -7,6 +7,7 @@ import SignUp from "./Pages/Auth/SignUp";
 import TopNavbar from "./Components/Navbar/TopNavbar/TopNavbar";
 import BottomNavbar from "./Components/Navbar/BottomNavbar/BottomNavbar";
 import Footer from "./Components/Footer/Footer";
+import SingleProduct from "./Pages/SingleProduct/SingleProduct";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/women" element={<Women />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/single-product" element={<SingleProduct />} />
       </Routes>
       <Footer />
     </>
